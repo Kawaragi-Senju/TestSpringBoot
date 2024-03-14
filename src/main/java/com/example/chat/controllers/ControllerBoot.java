@@ -30,7 +30,6 @@ public class ControllerBoot {
 
     @PostMapping("/user")
     public String registration(@RequestParam(name="name")String name, @RequestParam(name="email") String email){
-
         return "ok";
     }
 }
