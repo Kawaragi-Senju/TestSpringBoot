@@ -19,7 +19,7 @@ public class Security {
         http.authorizeHttpRequests((authorize) -> authorize
                         .requestMatchers("/admin").hasRole("ADMIN")
                         .requestMatchers("/registration").permitAll()
-                        .anyRequest().denyAll()
+                        .anyRequest().permitAll()
                 )
 
                 .httpBasic(Customizer.withDefaults())
